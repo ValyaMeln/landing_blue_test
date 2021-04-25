@@ -2,9 +2,36 @@ html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
-.bg-red{
-    background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+
+/*_____________*/
+.button {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 10px 28px;
 }
+
+.button.button-white {
+    background: #FFF;
+    color: #ED4C5C;
+    border-top: none;
+}
+
+.button.button-red {
+    background: #ED4C5C;
+
+}
+
+/*________________*/
+.bg-header {
+    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
+    url("../image/header_bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 header .navbar .navbar-nav a.nav-link {
     color: #FFFFFF;
     font-weight: bold;
@@ -15,6 +42,7 @@ header .navbar .navbar-nav a.nav-link {
     text-transform: uppercase;
     padding: 17px 25px;
 }
+
 header .button {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
@@ -25,16 +53,43 @@ header .button {
     line-height: 17px;
     padding: 10px 28px;
 }
-header .nav li.button{
+
+header .nav li.button {
     padding: 50px;
 }
+
 header .navbar-nav {
-    left:0 ;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
 }
-header a.navbar{
+
+header a.navbar {
     padding: 0 0 0 165px;
+}
+
+.budget .text {
+    max-width: 510px;
+    margin: 0 auto;
+    padding: 180px 0;
+    text-align: center
+}
+
+.budget h1 {
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 86px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 39px;
+}
+
+.budget p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 39px;
 }
