@@ -4,24 +4,18 @@ html, body {
 }
 
 /*_____________*/
-.button {
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 6px;
-    color: #FFFFFF;
-    font-size: 1rem;
-    padding: 10px 28px;
+
+
+h2 {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-size: 39px;
+    line-height: 135%;
+    text-transform: capitalize;
+    color: #000000;
+    margin-right: 50px;
 }
 
-.button.button-white {
-    background: #FFF;
-    color: #ED4C5C;
-    border-top: none;
-}
-
-.button.button-red {
-    background: #ED4C5C;
-}
 
 h3 {
     font-weight: 600;
@@ -30,38 +24,79 @@ h3 {
     color: #000000;
 }
 
-/*________________*/
-.bg-header {
-    background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%),
-    url("../image/header_bg.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-header .navbar .navbar-nav a.nav-link {
-    color: #FFFFFF;
+h5 {
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    padding: 17px 25px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #101010;
 }
 
-header .button {
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 6px;
-    background: transparent;
-    color: #FFFFFF;
+h6 {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #101010;
+}
+
+.blue_text {
+    font-size: 16px;
+    /*line-height: 160%;*/
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1D92FF;
+}
+
+.eighteen_px {
+    font-size: 18px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sixteen_px {
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    /*position: relative;*/
+}
+.bold{
+    font-weight: 600;
+}
+.button.white {
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid rgba(202, 197, 197, 0.14);
+    color: #1D92FF;
     font-size: 14px;
     line-height: 17px;
     padding: 10px 28px;
 }
 
-header .nav li.button {
-    padding: 50px;
+.button.blue {
+    border-radius: 3px;
+    border: 1px solid rgba(202, 197, 197, 0.14);
+    background: transparent;
+    color: #eeeeee;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 28px;
+}
+
+/*________________*/
+header, .blue_block {
+    background: #002547;
+    /*background-position: center;*/
+    /*background-size: cover;*/
+}
+
+header .navbar .navbar-nav a.nav-link {
+    font-size: 16px;
+    line-height: 130%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 30px 20px;
 }
 
 header .navbar-nav {
@@ -76,61 +111,156 @@ header a.navbar {
     padding: 0 0 0 165px;
 }
 
-.budget .text {
-    max-width: 510px;
-    margin: 0 auto;
-    padding: 180px 0;
-    text-align: center
+/*-------------------------------------*/
+img {
+    width: 100%;
 }
 
-.budget h1 {
-    font-weight: bold;
-    font-size: 72px;
-    line-height: 86px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 39px;
-}
-
-.budget p {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    color: #FFFFFF;
-    margin-bottom: 39px;
-}
-
-.two p {
-    font-size: 14px;
-    line-height: 20px;
-    text-align: justify;
-    color: #000000;
-}
-
-.two a {
-    font-size: 14px;
-    line-height: 20px;
-    text-align: justify;
-    color: #ED4C5C;
-}
-
-.two {
-    padding: 94px 0;
-}
-
-.two h3 {
-    margin-bottom: 24px;
-}
-
-.two .image {
+.blue_block {
     position: relative;
-    padding: 0 30px;
 }
 
-.two .image .play {
+.blue_block h1 {
+    font-size: 60px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+span.colortext {
+    color: #1D92FF;
+    font-weight: bold;
+}
+
+span.colortext.emphatic {
+    text-decoration: underline
+}
+.blue_block .text {
+    padding: 135px 45px 147px 227px;
+}
+
+.blue_block .col-6.left {
+    padding: 50px 40px 40px 20px;
+
+}
+
+.blue_block .button.blue {
+    margin-left: 15px;
+}
+
+.blue_block .inclined_square {
     position: absolute;
-    margin: auto 0;
+    width: 1034.12px;
+    height: 414.54px;
+    left: -400px;
+    top: -136px;
+    /*background: linear-gradient(88.16deg, rgba(81, 7, 33, 0.6) 1.5%, rgba(71, 0, 8, 0.6) 82.37%);*/
+    background: linear-gradient(88.16deg, rgba(7, 45, 81, 0.6) 1.5%, rgba(0, 37, 71, 0.6) 82.37%);
+    transform: rotate(44.88deg);
+}
+.col-6 {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    left: 0;
     bottom: 0;
+}
+.internet_services, .better_than_one, .be_good{
+    background: #E5E5E5;;
+}
+.internet_services .container {
+    padding: 130px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.internet_services .internet_services_row li {
+    list-style-type: none;
+    margin-left: 45px;
+}
+
+/*Section Better Than One*/
+.better_than_one .sixteen_px{
+    color: rgba(1, 7, 13, 0.7);
+}
+
+.better_than_one .images img {
+    position: absolute;
+}
+
+.better_than_one .images {
     top: 0;
-    left: -10px;
+    bottom: 0;
+    margin: auto;
+    padding-left:  25px
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.better_than_one li {
+    display: flex;
+    align-items: start;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.better_than_one li img {
+    position: absolute;
+    top: 5px;
+    width: auto;
+}
+
+li .text {
+    padding: 0 48px;
+}
+
+li .text p {
+    color: #01070D;
+    opacity: 0.5;
+}
+/*Section Be Good.*/
+.be_good{
+    padding: 150px 30px;
+}
+.be_good .sixteen_px{
+    color: rgba(1, 7, 13, 0.7);
+}
+
+.be_good .images img {
+    position: absolute;
+}
+
+.be_good .images {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-left:  25px
+}
+.be_good li {
+    display: flex;
+    align-items: start;
+    position: relative;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.be_good li img {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: auto;
+}
+
+.be_good li .text {
+    padding: 0 20px;
+}
+
+li .text p {
+    color: #01070D;
+    opacity: 0.5;
 }
