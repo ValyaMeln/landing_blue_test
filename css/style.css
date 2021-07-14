@@ -122,6 +122,27 @@ header a.navbar {
     padding: 0 0 0 165px;
 }
 
+.img_six_columns {
+    position: relative;
+    width: auto;
+    height: auto;
+
+}
+
+.gray_square {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.ResponsiveLayout {
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+
+}
+
 /*-------------------------------------*/
 img {
     width: 100%;
@@ -192,7 +213,7 @@ span.colortext.emphatic {
 
 }
 
-.internet_services, .better_than_one, .be_good, .title_six_columns {
+.internet_services, .better_than_one, .be_good, .title_six_columns, .keep_calm {
     background: #E5E5E5;;
 }
 
@@ -228,14 +249,14 @@ ul {
     padding-left: 0;
 }
 
-.better_than_one li {
+.better_than_one li, .keep_calm li {
     display: flex;
     align-items: start;
     position: relative;
     margin-bottom: 15px;
 }
 
-.better_than_one li img {
+.better_than_one li img, .keep_calm li img {
     position: absolute;
     top: 5px;
     width: auto;
@@ -319,13 +340,15 @@ li .text p {
 .title_six_columns {
     text-align: center;
 }
-.title_six_columns .row{
-    background: #E5E5E5;
+
+.title_six_columns .row {
     padding: 30px;
 }
+
 .title_six_columns .text {
     padding: 50px 350px;
 }
+
 .title_six_columns p.sixteen_px {
     font-family: Poppins, sans-serif;
     font-size: 16px;
@@ -335,34 +358,121 @@ li .text p {
     padding: 0 35px;
 }
 
-.title_six_columns .text h2 {
-    margin-right: 0;
-}
-.title_six_columns .container{
+.title_six_columns .container {
     border: 1px dashed #77BEFF;
     border-bottom: none;
-    margin-bottom: 50px;
+
 }
-.title_six_columns .six_columns h4 {
+
+/*---------Загальні стилі для секцій
+-----------------.title_six_columns
+--------------------------.keep_calm*/
+.title_six_columns .text {
+    padding: 50px 350px;
+}
+
+.title_six_columns .text h2, .keep_calm .text h2 {
+    margin-right: 0;
+}
+
+.title_six_columns .six_columns h4, .keep_calm.six_columns h4 {
     color: #000000;
     font-weight: 500;
 }
 
-.title_six_columns .six_columns .img_six_columns {
-    position: relative;
-    width: auto;
-    height: auto;
+.six_columns .img_six_columns {
     margin-bottom: 100px;
 }
 
-.title_six_columns .six_columns .gray_square {
-    position: absolute;
-    width: auto;
-    height: auto;
+/*------------------------------------------------------------*/
+.keep_calm {
+    font-family: Poppins, sans-serif;
+    text-align: center;
 }
-.title_six_columns .six_columns .ResponsiveLayout{
-    position: absolute;
-    width: auto;
-    height: auto;
-    margin-top: 30px;
+
+.keep_calm p.sixteen_px {
+    color: rgba(1, 7, 13, 0.7);
+    margin-left: 0;
+    text-transform: none;
+}
+
+.keep_calm .col-4:nth-child(odd) {
+    background: #FFFFFF;
+    opacity: 0.1;
+    border: 1px solid #1D92FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.keep_calm .blue {
+    background: linear-gradient(180deg, #1D92FF 0%, #002648 0.01%, #002547 100%);
+    box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.keep_calm h4 {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.keep_calm .blue p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px
+}
+
+.keep_calm .blue h2 {
+    color: #FFFFFF;
+    margin-right: 0;
+}
+
+.keep_calm .button {
+    margin-bottom: 15px;
+}
+
+.keep_calm .blue li p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: start;
+    margin-left: 25px;
+}
+
+.keep_calm li img {
+    left: 35px;
+}
+
+.keep_calm .button.white_blue {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 28px;
+    background: #1D92FF;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 18px;
+    position: relative;
+    left: 30px;
+    color: #ffffff;
+}
+
+.keep_calm .button.blue {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 18px;
+    padding: 10px 30px;
+}
+.keep_calm .button span{
+    margin-left: 15px;
+}
+.keep_calm .button.white span{
+    text-transform: capitalize;
+    padding: 12px 70px;
+}
+.keep_calm .white_left  p.sixteen_px, .keep_calm .white_right  p.sixteen_px{
+    /*color: rgba(1, 7, 13, 0.7);*/
+}
+.keep_calm .white_left h4, .keep_calm .white_right h4{
+    text-transform: uppercase;
+    color: #01070D;
+    margin: 10px 0;
 }
