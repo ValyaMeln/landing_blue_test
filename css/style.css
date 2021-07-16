@@ -9,11 +9,11 @@ html, body {
 h2 {
     font-family: Poppins, sans-serif;
     font-style: normal;
-    font-size: 39px;
+    font-size: 40px;
     line-height: 135%;
     text-transform: capitalize;
     color: #000000;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
 }
 
 
@@ -405,14 +405,19 @@ li .text p {
     border-radius: 10px;
     top: 38px;
     left: 10px;
+    align-self: flex-start;
 }
-.keep_calm .col-4.white_right{
+
+.keep_calm .col-4.white_right {
     left: -10px;
+    align-self: flex-start;
 }
+
 .keep_calm .blue {
     background: linear-gradient(180deg, #1D92FF 0%, #002648 0.01%, #002547 100%);
     box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    z-index: 1;
 }
 
 .keep_calm h4 {
@@ -482,10 +487,6 @@ li .text p {
     padding: 12px 70px;
 }
 
-.keep_calm .white_left p.sixteen_px, .keep_calm .white_right p.sixteen_px {
-    /*color: rgba(1, 7, 13, 0.7);*/
-}
-
 .keep_calm .white_left h4, .keep_calm .white_right h4 {
     text-transform: uppercase;
     color: #01070D;
@@ -512,13 +513,9 @@ li .text p {
     text-align: start;
 }
 
-.keep_calm .white_left .button, .keep_calm .white_right .button {
-
-}
-
 .bottom_blue_block .container {
-    padding: 150px 80px;
-
+    padding: 150px 80px 0 80px;
+    margin-bottom: -30px;
 }
 
 .bottom_blue_block .row {
@@ -534,21 +531,23 @@ li .text p {
 }
 
 
-.bottom_blue_block .top{
+.bottom_blue_block .top {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     border-radius: 50px;
     color: #FFFFFF;
-    padding-right: 145px;
+    /*padding-right: 145px;*/
     position: relative;
 }
-.bottom_blue_block input{
+
+.bottom_blue_block input {
     color: #FFFFFF;
     background: transparent;
     border: none;
-    padding: 24px 40px;
+    padding: 24px 20px;
 }
+
 .bottom_blue_block .right {
     position: absolute;
     right: 16px;
@@ -556,6 +555,70 @@ li .text p {
     border: none;
     border-radius: 50px;
 }
-.bottom_blue_block .right img{
+
+.bottom_blue_block .right img {
     padding: 15px 30px;
 }
+
+/*    FOOTER */
+
+footer {
+    background: #070C11;
+    opacity: 0.95;
+    text-transform: capitalize;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+}
+
+footer p {
+    color: #FFFFFF
+}
+
+footer .block {
+    padding: 120px 125px;
+}
+
+footer .block .left p{
+    padding-right: 140px;
+}
+
+footer .left a {
+    margin-bottom: 30px;
+}
+
+footer .block .right .list .facebook {
+    width: auto;
+    height: auto;
+}
+
+footer h5 {
+    font-weight: bold;
+    color: #FFFFFF;;
+    white-space: nowrap;
+    margin-bottom: 13px;
+    text-align: start;
+}
+
+footer ul {
+    padding-right:  80px;
+}
+
+footer li {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 5px;
+}
+footer input {
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    padding: 10px 30px 10px 15px;
+}
+footer .top {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+
+
