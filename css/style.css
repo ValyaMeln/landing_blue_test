@@ -101,11 +101,13 @@ header, .blue_block {
     /*background-position: center;*/
     /*background-size: cover;*/
 }
-header .nav-item:hover{
+
+header .nav-item:hover {
     color: #eeeeee;
     font-weight: 600;
     text-decoration: underline;
 }
+
 header .navbar .navbar-nav a.nav-link {
     font-size: 16px;
     line-height: 130%;
@@ -585,7 +587,7 @@ footer .block {
     padding: 120px 125px;
 }
 
-footer .block .left p{
+footer .block .left p {
     padding-right: 140px;
 }
 
@@ -612,47 +614,62 @@ footer li {
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 5px;
 }
+
 footer input {
     color: #FFFFFF;
     background: transparent;
     border: none;
     padding: 10px 30px 10px 15px;
 }
+
 footer .top {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
     color: #FFFFFF;
 }
 
-footer .list:not(:first-child){
+footer .list:not(:first-child) {
     margin-left: 55px;
 }
-.be_good li:hover{
-  cursor: pointer;   /* CТРІЛОЧКА ----------->>> ПАЛЬЧИК */
+
+.be_good li:hover {
+    cursor: pointer; /* CТРІЛОЧКА ----------->>> ПАЛЬЧИК */
 }
-.be_good h4{
+
+.be_good h4 {
     color: #6c757d;
     font-size: 16px;
 }
-.be_good li p{
+
+.be_good li p {
     display: none;
 }
-.be_good li.active h4{
+
+.be_good li.active h4 {
     color: #1D92FF;
     font-size: 24px;
 }
-.be_good li.active p{
-    display: block ;
+
+.be_good li.active p {
+    display: block;
 }
-.be_good li.active img{
+
+.be_good li.active img {
     transform: rotateZ(180deg);
 }
-.be_good .col-6.right{
+
+.be_good .col-6.right {
     position: relative;
 }
-.be_good .col-6.right img.graphic{
+
+.be_good .col-6.right img.graphic {
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
+}
+
+.keep_calm .white_left .button.white, .keep_calm .white_right .button.white {
+    background: #1D92FF;
+    color: #FFFFFF;
 }
