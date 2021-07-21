@@ -101,7 +101,11 @@ header, .blue_block {
     /*background-position: center;*/
     /*background-size: cover;*/
 }
-
+header .nav-item:hover{
+    color: #eeeeee;
+    font-weight: 600;
+    text-decoration: underline;
+}
 header .navbar .navbar-nav a.nav-link {
     font-size: 16px;
     line-height: 130%;
@@ -418,6 +422,7 @@ li .text p {
     box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     z-index: 1;
+    padding-bottom: 30px;
 }
 
 .keep_calm h4 {
@@ -516,6 +521,8 @@ li .text p {
 .bottom_blue_block .container {
     padding: 150px 80px 0 80px;
     margin-bottom: -30px;
+    position: relative;
+    z-index: 1;
 }
 
 .bottom_blue_block .row {
@@ -599,9 +606,6 @@ footer h5 {
     text-align: start;
 }
 
-footer ul {
-    padding-right:  80px;
-}
 
 footer li {
     font-weight: normal;
@@ -615,10 +619,17 @@ footer input {
     padding: 10px 30px 10px 15px;
 }
 footer .top {
-    background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
     color: #FFFFFF;
 }
 
-
+footer .list:not(:first-child){
+    margin-left: 55px;
+}
+.be_good ul .text_be_good, .be_good ul .vector.text_be_good{
+    display: none;
+}
+/*.be_good .active ul p:hover{*/
+/*    display:initial;*/
+/*}*/
