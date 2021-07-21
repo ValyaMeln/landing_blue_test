@@ -627,9 +627,32 @@ footer .top {
 footer .list:not(:first-child){
     margin-left: 55px;
 }
-.be_good ul .text_be_good, .be_good ul .vector.text_be_good{
+.be_good li:hover{
+  cursor: pointer;   /* CТРІЛОЧКА ----------->>> ПАЛЬЧИК */
+}
+.be_good h4{
+    color: #6c757d;
+    font-size: 16px;
+}
+.be_good li p{
     display: none;
 }
-/*.be_good .active ul p:hover{*/
-/*    display:initial;*/
-/*}*/
+.be_good li.active h4{
+    color: #1D92FF;
+    font-size: 24px;
+}
+.be_good li.active p{
+    display: block ;
+}
+.be_good li.active img{
+    transform: rotateZ(180deg);
+}
+.be_good .col-6.right{
+    position: relative;
+}
+.be_good .col-6.right img.graphic{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
