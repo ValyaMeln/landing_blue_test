@@ -239,14 +239,12 @@ span.colortext.emphatic {
 }
 
 .internet_services .container {
-    padding: 130px;
-    margin-left: 0;
-    margin-right: 0;
+    padding: 50px 0 50px 0;
 }
 
 .internet_services .internet_services_row li {
     list-style-type: none;
-    margin-left: 45px;
+    margin-bottom: 20px;
 }
 
 /*Section Better Than One*/
