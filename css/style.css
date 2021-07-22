@@ -211,7 +211,7 @@ span.colortext.emphatic {
 }
 
 @media screen and (max-width: 720px) {
-    .row {
+    .blue_block .row {
         flex-direction: column;
         /*padding-bottom: 50px;*/
     }
@@ -279,6 +279,14 @@ ul {
     position: absolute;
     top: 5px;
     width: auto;
+}
+@media screen and (max-width: 758px) {
+    .better_than_one .row {
+        flex-direction: column;
+    }
+    .better_than_one .left {
+        order: -2;
+    }
 }
 
 li .text {
@@ -671,11 +679,11 @@ footer .list:not(:first-child) {
     transform: rotateZ(180deg);
 }
 
-.be_good .col-6.right {
+.be_good .right {
     position: relative;
 }
 
-.be_good .col-6.right img.graphic {
+.be_good .right img.graphic {
     position: absolute;
     top: 0;
     bottom: 0;
