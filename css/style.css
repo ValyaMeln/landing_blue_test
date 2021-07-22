@@ -430,8 +430,10 @@ li .text p {
     margin-left: 0;
     text-transform: none;
 }
+.row>div{
 
-.keep_calm .col-4:nth-child(odd) {
+}
+.keep_calm .row>div:nth-child(odd) {
     /*background: #FFFFFF;*/
     /*opacity: 0.1;*/
     border: 1px solid #1D92FF;
@@ -442,11 +444,16 @@ li .text p {
     align-self: flex-start;
 }
 
-.keep_calm .col-4.white_right {
+.keep_calm .row>div.white_right {
     left: -10px;
     align-self: flex-start;
 }
-
+@media screen and (max-width: 758px) {
+    .keep_calm .row>div.white_right, .keep_calm .row>div.white_left{
+        top: 0;
+        left: 0;
+    }
+}
 .keep_calm .blue {
     background: linear-gradient(180deg, #1D92FF 0%, #002648 0.01%, #002547 100%);
     box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
