@@ -128,6 +128,10 @@ header a.navbar {
     padding: 0 0 0 165px;
 }
 
+header .navbar .navbar-toggler {
+    border: 1px solid #e9ecef;
+}
+
 .img_six_columns {
     position: relative;
     width: auto;
@@ -206,6 +210,18 @@ span.colortext.emphatic {
     transform: rotate(44.88deg);
 }
 
+@media screen and (max-width: 720px) {
+    .row {
+        flex-direction: column;
+        /*padding-bottom: 50px;*/
+    }
+    .blue_block .right {
+        order: -1;
+    }
+}
+.blue_block .row .left .text_arrow{
+    margin-bottom: 50px;
+}
 .col-6 {
     /*position: relative;*/
 }
@@ -215,8 +231,7 @@ span.colortext.emphatic {
     height: auto;
     position: absolute;
     left: 0;
-    top: 5px;
-
+    bottom: -15px;
 }
 
 .internet_services, .better_than_one, .be_good, .title_six_columns, .keep_calm, .bottom_blue_block {
