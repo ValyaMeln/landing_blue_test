@@ -590,6 +590,7 @@ li .text p {
     background: transparent;
     border: none;
     padding: 24px 20px;
+    outline: none;
 }
 
 .bottom_blue_block .right {
