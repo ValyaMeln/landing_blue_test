@@ -210,7 +210,7 @@ span.colortext.emphatic {
     transform: rotate(44.88deg);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 758px) {
     .blue_block .row {
         flex-direction: column;
         /*padding-bottom: 50px;*/
@@ -667,7 +667,11 @@ footer .top {
 footer .list:not(:first-child) {
     margin-left: 55px;
 }
-
+{
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: flex-end;
+}
 .be_good li:hover {
     cursor: pointer; /* CТРІЛОЧКА ----------->>> ПАЛЬЧИК */
 }
