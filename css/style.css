@@ -5,7 +5,6 @@ html, body {
 
 /*_____________*/
 
-
 h2 {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -13,9 +12,7 @@ h2 {
     line-height: 135%;
     text-transform: capitalize;
     color: #000000;
-    /*margin-right: 50px;*/
 }
-
 
 h3 {
     font-weight: 600;
@@ -54,7 +51,6 @@ ul {
 
 .blue_text {
     font-size: 16px;
-    /*line-height: 160%;*/
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #1D92FF;
@@ -84,27 +80,24 @@ ul {
     border-radius: 3px;
     font-size: 14px;
     line-height: 17px;
+    border: 1px solid rgba(202, 197, 197, 0.14);
+    padding: 10px 28px;
 }
 
 .button.white {
     background: #FFFFFF;
-    border: 1px solid rgba(202, 197, 197, 0.14);
     color: #1D92FF;
-    padding: 10px 28px;
+
 }
 
 .button.blue {
-    border: 1px solid rgba(202, 197, 197, 0.14);
     background: transparent;
     color: #eeeeee;
-    padding: 10px 28px;
 }
 
 /*________________*/
 header, .blue_block {
     background: #002547;
-    /*background-position: center;*/
-    /*background-size: cover;*/
 }
 
 header .nav-item:hover {
@@ -665,18 +658,28 @@ footer .list:not(:first-child) {
     margin-left: 55px;
 }
 
-@media screen and (max-width: 768px) {
-    footer .left {
-        justify-content: start;
-    }
-
+@media screen and (max-width: 992px) {
     footer .right > div {
-        /*flex-direction: column;*/
-        justify-content: start;
+        width: 100%;
     }
 
-    footer .list:not(:first-child) {
+    footer .right > div:not(:first-child) {
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer .right > div {
+        flex-direction: column;
+    }
+
+    footer .right .list {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .blue_block .inclined_square {
+        display: none;
     }
 }
 
