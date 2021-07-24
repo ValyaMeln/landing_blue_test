@@ -4,7 +4,6 @@ html, body {
 }
 
 /*_____________*/
-
 h2 {
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -208,6 +207,21 @@ span.colortext.emphatic {
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 540px) {
+    .blue_block .buttons {
+        flex-wrap: wrap;
+    }
+
+    .blue_block .button.white, .blue_block .button.blue {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .blue_block .button.blue {
+        margin-top: 10px;
+    }
+}
+
 .arrow {
     width: auto;
     height: auto;
@@ -222,6 +236,10 @@ span.colortext.emphatic {
 
 .internet_services .container {
     padding: 50px 0 50px 0;
+}
+
+.internet_services ul {
+    margin: 0 10px;
 }
 
 .internet_services .internet_services_row li {
@@ -379,9 +397,7 @@ li .text p {
 .title_six_columns .six_columns .container {
     border: 1px dashed #77BEFF;
     border-bottom: none;
-
 }
-
 
 .title_six_columns .text h2, .keep_calm .text h2 {
     margin-right: 0;
@@ -560,7 +576,6 @@ li .text p {
     box-sizing: border-box;
     border-radius: 50px;
     color: #FFFFFF;
-    /*padding-right: 145px;*/
     position: relative;
 }
 
@@ -633,7 +648,6 @@ footer h5 {
     margin-bottom: 13px;
     text-align: start;
 }
-
 
 footer li {
     font-weight: normal;
