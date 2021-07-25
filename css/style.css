@@ -658,6 +658,7 @@ footer input {
     background: transparent;
     border: none;
     padding: 10px 30px 10px 15px;
+    outline: none;
 }
 
 footer .top {
