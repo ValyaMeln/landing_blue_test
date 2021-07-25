@@ -211,14 +211,12 @@ span.colortext.emphatic {
     .blue_block .buttons {
         flex-wrap: wrap;
     }
-
-    .blue_block .button.white, .blue_block .button.blue {
-        max-width: 100%;
-        margin-left: 0;
+    .blue_block .buttons>div {
+        flex-basis: 100%;
     }
-
     .blue_block .button.blue {
-        margin-top: 10px;
+        margin-top: 15px;
+        margin-left: 0;
     }
 }
 
@@ -696,4 +694,3 @@ footer .list:not(:first-child) {
         display: none;
     }
 }
-
