@@ -1,3 +1,4 @@
+
 html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -128,8 +129,30 @@ header a.navbar {
 
 header .navbar .navbar-toggler {
     border: 1px solid #e9ecef;
+    padding: 5px;
 }
-
+header .navbar-toggler-icon{
+    background: #FFFFFF;
+    background-origin: content-box;
+    height: 2px;
+    position: relative;
+    top: -1px;
+}
+header .navbar-toggler-icon::before, header .navbar-toggler-icon::after{
+    content: "";
+    background: inherit;
+    height: inherit;
+    width: 100%;
+    display: inherit;
+    position: absolute;
+    left: 0;
+}
+header .navbar-toggler-icon::before{
+    bottom: 7px;
+}
+header .navbar-toggler-icon::after{
+    top: 7px;
+}
 .img_six_columns {
     position: relative;
     width: auto;
@@ -661,7 +684,7 @@ footer input {
     color: #FFFFFF;
     background: transparent;
     border: none;
-    padding: 10px 30px 10px 15px;
+    padding: 10px 30px 10px 10px;
     outline: none;
 }
 
@@ -698,4 +721,37 @@ footer .list:not(:first-child) {
     .blue_block .inclined_square {
         display: none;
     }
+}
+@media screen and (max-width: 448px) {
+    .be_good {
+        padding: 20px 15px;
+    }
+    .bottom_blue_block .top{
+        padding-bottom: 50px;
+    }
+    .bottom_blue_block input{
+        width: 100%;
+    }
+    .bottom_blue_block .right{
+        top: 50%;
+        bottom: 7px;
+        right: 30%;
+    }
+    .bottom_blue_block .container{
+        padding: 15px;
+    }
+    .bottom_blue_block .row{
+        border: none;
+    }
+    footer .block {
+        padding: 25px 0 0 0 ;
+        flex-direction: column;
+    }
+    footer .left {
+        flex: 0 0 100%;
+        max-width: 250px;
+    }
+    /*footer .right {*/
+    /*     flex: 0 0 100%;*/
+    /*}*/
 }
